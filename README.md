@@ -2,6 +2,8 @@
 This repository is a code example of a the paper: 
 [Adversarial Multiclass Classification: A Risk Minimization Perspective](https://papers.nips.cc/paper/6088-adversarial-multiclass-classification-a-risk-minimization-perspective)
 
+Full paper: [https://www.cs.uic.edu/~rfathony/pdf/fathony2016adversarial.pdf](https://www.cs.uic.edu/~rfathony/pdf/fathony2016adversarial.pdf)
+
 ### Abstract
 
 Recently proposed adversarial classification methods have shown promising results for cost sensitive and multivariate losses. In contrast with empirical risk minimization (ERM) methods, which use convex surrogate losses to approximate the desired non-convex target loss function, adversarial methods minimize non-convex losses by treating the properties of the training data as being uncertain and worst case within a minimax game. Despite this difference in formulation, we recast adversarial classification under zero-one loss as an ERM method with a novel prescribed loss function. We demonstrate a number of theoretical and practical advantages over the very closely related hinge loss ERM methods. This establishes adversarial classification under the zero-one loss as a method that fills the long standing gap in multiclass hinge loss classification, simultaneously guaranteeing Fisher consistency and universal consistency, while also providing dual parameter sparsity and high accuracy predictions in practice.
@@ -45,7 +47,7 @@ To run the code, execute (in terminal):
 julia example.jl
 ```
 
-# Citation (BiBTeX)
+# Citation (BibTeX)
 ```
 @incollection{fathony2016adversarial,
 title = {Adversarial Multiclass Classification: A Risk Minimization Perspective},
