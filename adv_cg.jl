@@ -92,7 +92,7 @@ function train_adv_cg(X::Matrix, y::Vector, C::Real=1.0;
 
       if val > max_xi_i
         cs = (i, sort!(psis_id))
-        if findfirst(constraints .== cs) == 0
+        if findfirst(size(constraints) .== size(collect(cs))) == 0 || findfirst(constraints .== cs) == 0
           push!(constraints, cs)
           push!(const_added, cs)
         end
